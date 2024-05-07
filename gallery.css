@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    object-fit: cover;
+}
+
+
+.gallery-container {
+    margin-top: 12%;
+    column-count: 4;
+    column-gap: 10px;
+    margin-bottom: 10%;
+}
+
+.gallery-container img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.photo:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.1);
+}
+
+.card__content{
+    background-color: rgb(217, 239, 255);
+    box-shadow: 3px;
+}
