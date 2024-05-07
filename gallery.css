@@ -29,7 +29,11 @@ body {
     transform: scale(1.1);
 }
 
-.card__content{
+.photo:hover .card__content{
     background-color: rgb(217, 239, 255);
-    box-shadow: 3px;
+    box-shadow: 3px 3px 3px rgb(217, 239, 255);
+}
+
+.card__content{
+    text-align: center;
 }
