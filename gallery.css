@@ -1,39 +1,218 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
+
+*,
+*::before,
+*::after {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: aliceblue;
-    object-fit: cover;
+font-family: "Poppins", sans-serif;
 }
 
-
-.gallery-container {
-    margin-top: 12%;
-    column-count: 4;
-    column-gap: 10px;
-    margin-bottom: 10%;
+::selection {
+background-color: #0b372dbb;
 }
 
-.gallery-container img {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
+.logo {
+width: 100px;
 }
 
-.photo:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transform: scale(1.1);
+header {
+position: absolute;
+z-index: 9999;
+width: 100%;
+padding: 0.9rem 0;
+top: 0;
+left: 0;
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.photo:hover .card__content{
-    background-color: rgb(217, 239, 255);
-    box-shadow: 3px 3px 3px rgb(217, 239, 255);
+header nav {
+max-width: 1400px;
+margin: 0 auto;
+padding: 0 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+display: flex;
 }
 
-.card__content{
-    text-align: center;
+header ul {
+list-style: none;
+align-items: center;
+display: flex;
 }
+
+header ul a {
+text-decoration: none;
+color: #fff;
+padding: 0 1.5rem;
+text-transform: uppercase;
+font-weight: 300;
+font-size: 0.83rem;
+}
+
+.search a {
+font-size: 1.05rem;
+padding: 0 3rem;
+}
+
+.hamburger {
+padding-left: 1.5rem;
+}
+
+.hamburger a {
+padding: 0;
+width: 37px;
+height: 37px;
+display: flex;
+border-radius: 50%;
+background-color: rgba(115, 115, 115, 0.7);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+justify-content: center;
+align-items: center;
+}
+
+.hamburger .bar {
+position: relative;
+width: 52%;
+height: 1.3px;
+background-color: #fff;
+border-radius: 2px;
+}
+
+.hamburger .bar::before,
+.hamburger .bar::after {
+content: "";
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+width: 60%;
+height: 100%;
+background-color: inherit;
+border-radius: 2px;
+}
+
+.hamburger .bar::before {
+top: -4.5px;
+}
+
+.hamburger .bar::after {
+top: 4.5px;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	color: white;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.container 
+{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	background: #222;
+}
+.container input 
+{
+	appearance: none;
+}
+.container .dots 
+{
+	position: absolute;
+	bottom: 30px;
+	display: flex;
+	gap: 6px;
+	z-index: 1000;
+}
+.container .dots label 
+{
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border: 2px solid #222;
+	opacity: 0.5;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.container input:nth-child(1):checked ~ .dots label:nth-child(1), 
+.container input:nth-child(2):checked ~ .dots label:nth-child(2), 
+.container input:nth-child(3):checked ~ .dots label:nth-child(3), 
+.container input:nth-child(4):checked ~ .dots label:nth-child(4), 
+.container input:nth-child(5):checked ~ .dots label:nth-child(5) 
+{
+	opacity: 1;
+}
+.container .slider 
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.container .slider .slide 
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	clip-path: circle(0% at 0% 50%);
+	background: var(--img);
+	background-size: cover;
+	transition: 1.5s;
+	transition-delay: 0s;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	background-position: left;
+}
+.container .slider .slide:nth-child(even)
+{
+	clip-path: circle(0% at 100% 50%);
+	background-position: right;
+}
+.container input:nth-child(1):checked ~ .slider .slide:nth-child(1), 
+.container input:nth-child(2):checked ~ .slider .slide:nth-child(2), 
+.container input:nth-child(3):checked ~ .slider .slide:nth-child(3), 
+.container input:nth-child(4):checked ~ .slider .slide:nth-child(4),
+.container input:nth-child(5):checked ~ .slider .slide:nth-child(5) 
+{
+	clip-path: circle(150% at 50% 50%);
+	transition-delay: 1s;
+	background-position: center;
+}
+.content 
+{
+	position: relative;
+	padding: 50px 50px 80px 80px;
+	max-width: 550px;
+}
+.content h2 
+{
+	color: #fff;
+	font-size: 3em;
+}
+.content p 
+{
+	color: #fff;
+} 
