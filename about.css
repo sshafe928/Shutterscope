@@ -187,28 +187,4 @@ overflow: hidden;
     background: linear-gradient(to top, #7083ba,#e0ecff);
 }
 
-.gallery {
-    padding: 50px 0; /* Adjust padding as needed */
-    background-color: #7485b9;
-    display: flex;
-    flex-wrap: wrap; /* Allow images to wrap to the next line */
-    justify-content: space-between; /* Distribute items evenly along the main axis */
-}
 
-.image-container {
-    width: calc(33.33% - 20px); /* Adjust the width to fit three images horizontally */
-    margin-bottom: 40px; /* Add margin at the bottom to create vertical spacing */
-}
-
-.image-container img {
-    width: 100%; /* Ensure images fill their containers */
-    height: auto;
-    opacity: 0; /* Initially hide images */
-    transition: opacity 0.5s ease-in-out; /* Smooth fade-in transition */
-}
-
-
-.fade-in {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out; /* Smooth fade-in transition */
-}
