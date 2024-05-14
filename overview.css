@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+	background: #111;
+}
+.scroll 
+{
+	width: 800px;
+	display: flex;
+	overflow: hidden;
+-webkit-mask-image: linear-gradient(90deg,transparent, #fff 20% , #fff 80%,transparent);
+}
+.scroll div 
+{
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	white-space: nowrap;
+	animation: animate var(--t) linear infinite;
+	animation-delay: calc(var(--t) * -1);
+}
+.scroll div:nth-child(2)
+{
+	animation: animate2 var(--t) linear infinite;
+	animation-delay: calc(var(--t) / -2);
+}
+.scroll div span 
+{
+	display:inline-flex;
+	margin: 10px;
+	background: #333;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+.scroll div span:hover 
+{
+	background: #4caf50;
+	color: #fff;
+	transition: 0s;
+}
+@keyframes animate 
+{
+	0% 
+	{
+		transform: translateX(100%);
+	}
+	100% 
+	{
+		transform: translateX(-100%);
+	}
+}
+@keyframes animate2 
+{
+	0% 
+	{
+		transform: translateX(0);
+	}
+	100% 
+	{
+		transform: translateX(-200%);
+	}
+}
+
+
+.scroll:nth-child(5) div 
+{
+	display: flex;
+}
+.scroll img 
+{
+	max-width: 100px;
+	scale: 0.8;
+	filter: grayscale(1);
+}
+.scroll img:hover 
+{
+	filter: grayscale(0);
+} 
+span.clr 
+{
+	background: #ff376f !important;
+	color: #fff !important;
+}
