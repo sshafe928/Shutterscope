@@ -570,54 +570,44 @@ font-size: 3.3rem;
 font-size: 2.6rem;
 }
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: calc(100vh + 200px); /* Adjusted min-height */
     background: url('bg-pic.jpg');
     background-size: cover;
     background-position: center;
+    margin-top: 45px; /* Adjusted margin-top */
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .cards-container {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999;
     display: flex;
-    flex-direction: column; /* Change to column layout */
-    justify-content: center; 
-    align-items: center; /* Align items to the center horizontally */
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .card {
-    position: relative;
-    z-index: 10000;
-    width: 100%; /* Occupy full width of the container */
-    max-width: 350px;
+    z-index: 9999;
+    width: calc(25% - 15px); /* Adjusted width for 4 columns with 15px margin */
+    max-width: 300px; /* Adjusted maximum width */
     border-top: 1px solid rgba(255, 255, 255, 0.65);
     border-left: 1px solid rgba(255, 255, 255, 0.65);
     border-radius: 16px;
-    padding: 50px 25px;
+    padding: 45px 20px; /* Adjusted padding */
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(255, 255, 0, 0.1);
+    box-shadow: 0 4px 25px rgba(255, 255, 255, 0.1); /* Adjusted box shadow */
     backdrop-filter: blur(5px);
-    margin: 10px;
+    margin: 10px; /* Adjusted margin */
 }
-
-
 
 .card .wrapper {
     display: flex;
@@ -627,8 +617,8 @@ body{
 }
 
 .profile {
-    width: 100px;
-    height: 100px;
+    width: 90px; /* Adjusted profile picture size */
+    height: 90px; /* Adjusted profile picture size */
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.3);
     overflow: hidden;
@@ -642,14 +632,14 @@ body{
 .wrapper h2 {
     color: rgba(255, 255, 255, 0.9);
     letter-spacing: 1.2px;
-    margin-top: 20px;
-    font-size: 2rem;
+    margin-top: 15px; /* Adjusted margin */
+    font-size: 1.8rem; /* Adjusted font size */
 }
 
 .wrapper p {
     line-height: 1.6;
-    font-size: 1rem;
-    margin: 10px 0;
+    font-size: 0.9rem; /* Adjusted font size */
+    margin: 8px 0; /* Adjusted margin */
     text-align: center;
     color: rgba(255, 255, 255, 0.9);
 }
@@ -657,13 +647,13 @@ body{
 .wrapper a {
     display: inline-block;
     background-color: rgba(255, 255, 255, 1);
-    padding: 12px 40px;
+    padding: 10px 35px; /* Adjusted padding */
     border-radius: 50px;
-    margin: 10px;
+    margin: 8px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 1.6px;
+    letter-spacing: 1.4px; /* Adjusted letter spacing */
     color: black;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); /* Adjusted box shadow */
 }

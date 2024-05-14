@@ -21,7 +21,6 @@ body
 	width: 800px;
 	display: flex;
 	overflow: hidden;
--webkit-mask-image: linear-gradient(90deg,transparent, #fff 20% , #fff 80%,transparent);
 }
 .scroll div 
 {
