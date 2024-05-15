@@ -242,8 +242,8 @@ width: 132%;
     position: absolute;
     z-index: 3;
     width: 1800px;
-    top: calc(50% - 900px);
-    left: 0;
+    top: calc(100% - 900px);
+    left: -200px;
     overflow-x: hidden;
 }
 
@@ -258,19 +258,19 @@ width: 129.3%;
 
 .mountain-9 {
     position: absolute;
-    z-index: 6;
-    width: 1500px;
-    top: calc(50vh - 750px);
-    left: 0;
+    z-index: 7;
+    width: 1400px;
+    top: calc(88vh - 750px);
+    left: -55px;
 }
 
 
 .mountain-8 {
     position: absolute;
     z-index: 10;
-    width: 2100px; /* Adjust as needed */
-    bottom: 0;
-    left: 0;
+    width: fit-content; /* Adjust as needed */
+    top: calc(114.5vh - 750px);
+    left: 28px;
 }
 
 
@@ -293,9 +293,9 @@ left: 71.18%;
 
 .text {
 position: absolute;
-z-index: 8;
-top: 12%;
-left: 42%;
+z-index: 6;
+top: 6.5%;
+left: 41%;
 text-align: center;
 text-transform: uppercase;
 color: #fff;
@@ -373,16 +373,16 @@ width: 108.33%;
 .mountain-2 {
 position: absolute;
 z-index: 4;
-width: 2019px;
-height: 2419px;
-right: 0%;
-bottom: 0;
+width: fit-content;
+height: fit-content;
+right: -17%;
+top: calc(95vh - 750px);
 }
 
 .mountain-1 {
 position: absolute;
 z-index: 18;
-bottom: 0%;
+bottom: -1.5%;
 width: 1500px;
 height: 780px;
 }
@@ -614,7 +614,7 @@ body {
 
 .card {
     z-index: 9999;
-    width: calc(50% - 20px);
+    width: calc(90% - 20px);
     max-width: 300px;
     border-top: 1px solid rgba(255, 255, 255, 0.65);
     border-left: 1px solid rgba(255, 255, 255, 0.65);
