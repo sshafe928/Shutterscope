@@ -225,10 +225,15 @@ transition: none;
 }
 
 .bg-img {
-position: absolute;
-width: 200%;
-z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
 }
+
 
 .fog-7 {
 position: absolute;
@@ -244,9 +249,7 @@ width: 132%;
     width: 1800px;
     top: calc(50% - 900px);
     left: 0;
-    overflow-x: hidden;
 }
-
 
 .fog-6 {
 position: absolute;
@@ -264,15 +267,13 @@ width: 129.3%;
     left: 0;
 }
 
-
 .mountain-8 {
-    position: absolute;
-    z-index: 10;
-    width: 2100px; /* Adjust as needed */
-    bottom: 0;
-    left: 0;
+position: absolute;
+z-index: 10;
+width: 2100px;
+bottom: 0; /* Adjusted to keep it within the viewport */
+left: 0; /* Adjusted to keep it within the viewport */
 }
-
 
 
 .fog-5 {
@@ -579,11 +580,9 @@ font-size: 3.3rem;
 font-size: 2.6rem;
 }
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*,
-*::before,
-*::after {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -591,8 +590,6 @@ font-size: 2.6rem;
 }
 
 body {
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow-y: hidden; /* Hide vertical scrollbar */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -675,4 +672,3 @@ body {
     color: black;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
 }
-
