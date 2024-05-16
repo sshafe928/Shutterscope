@@ -142,8 +142,48 @@
         
         </div>
     </div>
-    </body>
-    </html>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let currentSlide = 1;
+            const totalSlides = document.querySelectorAll('.slide').length;
+    
+            function showSlide(n) {
+                if (n < 1) {
+                    currentSlide = totalSlides;
+                } else if (n > totalSlides) {
+                    currentSlide = 1;
+                }
+    
+                document.querySelector(`#slide${currentSlide}`).checked = true;
+            }
+    
+            // Initial slide display
+            showSlide(currentSlide);
+    
+            // Event listener for left arrow key
+            document.addEventListener('keydown', function(e) {
+                if (e.keyCode === 37) { // Left arrow key
+                    showSlide(currentSlide -= 1);
+                }
+            });
+    
+            // Event listener for right arrow key
+            document.addEventListener('keydown', function(e) {
+                if (e.keyCode === 39) { // Right arrow key
+                    showSlide(currentSlide += 1);
+                }
+            });
+    
+            // Link arrow keys to input elements
+            document.querySelector('.container').addEventListener('keydown', function(e) {
+                if (e.keyCode === 37) { // Left arrow key
+                    showSlide(currentSlide -= 1);
+                } else if (e.keyCode === 39) { // Right arrow key
+                    showSlide(currentSlide += 1);
+                }
+            });
+        });
+    </script>
     
 </body>
 </html>
