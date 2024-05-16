@@ -6,6 +6,7 @@
 <title>ShutterScope</title>
 <link rel="stylesheet" href="login.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 <link rel="icon" type="image/png" href="./img/favicon-16x16.png">
 </head>
 <body>
@@ -14,24 +15,24 @@
 <nav>
 <img src="#" alt="" class="logo">
 <ul>
-    <li>
-        <a href="index.html">Home</a>
-    </li>
 <li>
-    <a href="login.html">Login</a>
+    <a href="index.html">Home</a>
 </li>
 <li>
-    <a href="login.html">Sign up</a>
+<a href="login.html">Login</a>
+</li>
+<li>
+<a href="login.html">Sign up</a>
 </li>
 <li class="search">
-    <a href="#">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    </a>
+<a href="#">
+<i class="fa-solid fa-magnifying-glass"></i>
+</a>
 </li>
 <li class="hamburger">
-    <a href="#">
-    <div class="bar"></div>
-    </a>
+<a href="#">
+<div class="bar"></div>
+</a>
 </li>
 </ul>
 </nav>
@@ -39,35 +40,81 @@
 
 <div class="container">
 <div class="box signin">
-    <h2>Already Have an Account ?</h2>
-    <button class="signinBtn">Sign in</button>
+<h2>Already Have an Account ?</h2>
+<button class="signinBtn">Sign in</button>
 </div>
 <div class="box signup">
-    <h2>Don't Have an Account ?</h2>
-    <button class="signupBtn">Sign up</button>
+<h2>Don't Have an Account ?</h2>
+<button class="signupBtn">Sign up</button>
 </div>
 <div class="formBx">
-    <div class="form signinForm">
-    <form>
-        <h3>Sign In</h3>
-        <input type="text" name="" placeholder="Username">
-        <input type="password" name="" placeholder="Password">
-        <input type="submit" name="" value="Login">
-        <a href="#" class="forgot">Forgot Password</a>
-    </form>
-    </div>
-    <div class="form signupForm">
-    <form>
-        <h3>Sign Up</h3>
-        <input type="text" name="" placeholder="Username">
-        <input type="text" name="" placeholder="Email Address">
-        <input type="password" name="" placeholder="Password">
-        <input type="password" name="" placeholder="Confirm Password">
-        <input type="submit" name="" value="Register">
-    </form>
-    </div>
+<div class="form signinForm">
+<form>
+    <h3>Sign In</h3>
+    <input type="text" name="" placeholder="Username">
+    <input type="password" name="" placeholder="Password">
+    <input type="submit" name="" value="Login">
+    <a href="#" class="forgot">Forgot Password</a>
+</form>
+</div>
+<div class="form signupForm">
+<form>
+    <h3>Sign Up</h3>
+    <input type="text" name="" placeholder="Username">
+    <input type="text" name="" placeholder="Email Address">
+    <input type="password" name="" placeholder="Password">
+    <input type="password" name="" placeholder="Confirm Password">
+    <input type="submit" name="" value="Register">
+</form>
 </div>
 </div>
+</div>
+
+<aside class="sidebar">
+<div class="logo">
+    <img src="#" alt="">
+</div>
+<ul class="links">
+    <h4>Main Menu</h4>
+    <li>
+    <span class="material-symbols-outlined">dashboard</span>
+    <a href="./gallery.html">gallery</a>
+    </li>
+    <li>
+    <span class="material-symbols-outlined">show_chart</span>
+    <a href="./about.html">about</a>
+    </li>
+    <li>
+    <span class="material-symbols-outlined">flag</span>
+    <a href="./service.html">service</a>
+    </li>
+    <hr>
+    <h4>Advanced</h4>
+    <li>
+    <span class="material-symbols-outlined">group</span>
+    <a href="#">Mentorship</a>
+    </li>
+    <hr>
+    <h4>Account</h4>
+    <li>
+    <span class="material-symbols-outlined">bar_chart</span>
+    <a href="overview.html">Overview</a>
+    </li>
+    <li>
+    <span class="material-symbols-outlined">mail</span>
+    <a href="contact.html">Message</a>
+    </li>
+    <li>
+    <span class="material-symbols-outlined">settings</span>
+    <a href="#">Settings</a>
+    </li>
+    <li class="logout-link">
+    <span class="material-symbols-outlined">logout</span>
+    <a href="#">Logout</a>
+    </li>
+</ul>
+</aside>
+</main>
 
 
 <script>
@@ -75,10 +122,10 @@ let signinBtn = document.querySelector('.signinBtn');
 let signupBtn = document.querySelector('.signupBtn');
 let body = document.querySelector('body');
 signupBtn.onclick = function(){
-    body.classList.add('slide');
+body.classList.add('slide');
 }
 signinBtn.onclick = function(){
-    body.classList.remove('slide');
+body.classList.remove('slide');
 }
 pass_field = document.querySelector('.pass-key');
 const showBtn = document.querySelector('.show');

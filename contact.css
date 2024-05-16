@@ -294,8 +294,8 @@ left: 71.18%;
 .text {
 position: absolute;
 z-index: 6;
-top: 6.5%;
-left: 41%;
+top: 15.5%;
+left: 39%;
 text-align: center;
 text-transform: uppercase;
 color: #fff;
@@ -373,10 +373,10 @@ width: 108.33%;
 .mountain-2 {
 position: absolute;
 z-index: 4;
-width: 1600px;
+width: 900px;
 height: fit-content;
-right: -11%;
-top: calc(98vh - 750px);
+right: -7%;
+top: calc(119vh - 750px);
 }
 
 .mountain-1 {
