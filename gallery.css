@@ -235,7 +235,7 @@ h1 {
 	animation: fadeIn 5s; 
 	position: absolute;
 	bottom: 10%;
-	right:43%;
+	right:69vh;
 	z-index: 10;
 	animation-fill-mode: forwards;
 	border-top: 1px solid rgba(255, 255, 255, 0.65);
