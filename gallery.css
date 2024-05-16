@@ -153,11 +153,18 @@ h1 {
 	border-radius: 50%;
 	cursor: pointer;
 }
-.container input:nth-child(1):checked ~ .dots label:nth-child(1), 
-.container input:nth-child(2):checked ~ .dots label:nth-child(2), 
-.container input:nth-child(3):checked ~ .dots label:nth-child(3), 
-.container input:nth-child(4):checked ~ .dots label:nth-child(4), 
-.container input:nth-child(5):checked ~ .dots label:nth-child(5) 
+.container input:nth-child(1):checked ~ .slider .slide:nth-child(1), 
+.container input:nth-child(2):checked ~ .slider .slide:nth-child(2), 
+.container input:nth-child(3):checked ~ .slider .slide:nth-child(3), 
+.container input:nth-child(4):checked ~ .slider .slide:nth-child(4),
+.container input:nth-child(5):checked ~ .slider .slide:nth-child(5),
+.container input:nth-child(6):checked ~ .slider .slide:nth-child(6), 
+.container input:nth-child(7):checked ~ .slider .slide:nth-child(7), 
+.container input:nth-child(8):checked ~ .slider .slide:nth-child(8), 
+.container input:nth-child(9):checked ~ .slider .slide:nth-child(9),
+.container input:nth-child(10):checked ~ .slider .slide:nth-child(10),
+.container input:nth-child(11):checked ~ .slider .slide:nth-child(11),
+.container input:nth-child(12):checked ~ .slider .slide:nth-child(12)
 {
 	opacity: 1;
 }
@@ -195,7 +202,14 @@ h1 {
 .container input:nth-child(2):checked ~ .slider .slide:nth-child(2), 
 .container input:nth-child(3):checked ~ .slider .slide:nth-child(3), 
 .container input:nth-child(4):checked ~ .slider .slide:nth-child(4),
-.container input:nth-child(5):checked ~ .slider .slide:nth-child(5) 
+.container input:nth-child(5):checked ~ .slider .slide:nth-child(5),
+.container input:nth-child(6):checked ~ .slider .slide:nth-child(6), 
+.container input:nth-child(7):checked ~ .slider .slide:nth-child(7), 
+.container input:nth-child(8):checked ~ .slider .slide:nth-child(8), 
+.container input:nth-child(9):checked ~ .slider .slide:nth-child(9),
+.container input:nth-child(10):checked ~ .slider .slide:nth-child(10),
+.container input:nth-child(11):checked ~ .slider .slide:nth-child(11),
+.container input:nth-child(12):checked ~ .slider .slide:nth-child(12)
 {
 	clip-path: circle(150% at 50% 50%);
 	transition-delay: 1s;
