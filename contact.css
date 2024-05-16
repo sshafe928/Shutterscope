@@ -243,7 +243,7 @@ width: 132%;
     z-index: 3;
     width: 1800px;
     top: calc(100% - 900px);
-    left: -200px;
+    left: -65px;
     overflow-x: hidden;
 }
 
@@ -260,17 +260,17 @@ width: 129.3%;
     position: absolute;
     z-index: 7;
     width: 1400px;
-    top: calc(88vh - 750px);
-    left: -55px;
+    top: calc(113vh - 750px);
+    left: 85px;
 }
 
 
 .mountain-8 {
     position: absolute;
     z-index: 10;
-    width: fit-content; /* Adjust as needed */
-    top: calc(114.5vh - 750px);
-    left: 28px;
+    width: 1400px;
+    top: calc(109.5vh - 750px);
+    left: 68px;
 }
 
 
@@ -373,15 +373,15 @@ width: 108.33%;
 .mountain-2 {
 position: absolute;
 z-index: 4;
-width: fit-content;
+width: 1600px;
 height: fit-content;
-right: -17%;
-top: calc(95vh - 750px);
+right: -11%;
+top: calc(98vh - 750px);
 }
 
 .mountain-1 {
 position: absolute;
-z-index: 18;
+z-index: 5;
 bottom: -1.5%;
 width: 1500px;
 height: 780px;
