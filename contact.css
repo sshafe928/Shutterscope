@@ -293,7 +293,7 @@ left: 71.18%;
 
 .text {
 position: absolute;
-z-index: 6;
+z-index: 999999;
 top: 6.9%;
 left: 15.2%;
 text-align: center;
@@ -678,7 +678,7 @@ body {
 
 
 section {
-    z-index: 9999999;
+    z-index: 99999;
     display: flex;
     justify-content: center;
     align-items: center;
