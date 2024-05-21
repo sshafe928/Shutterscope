@@ -20,6 +20,8 @@ background-color: #0b372dbb;
 width: 100px;
 }
 
+
+
 header {
 position: absolute;
 z-index: 9999;
@@ -27,7 +29,12 @@ width: 100%;
 padding: 0.9rem 0;
 top: 0;
 left: 0;
-border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+border-top: 1px solid rgba(255, 255, 255, 0.65);
+border-left: 1px solid rgba(255, 255, 255, 0.65);
+border-radius: 16px;
+padding: 20px 20px;
+background: rgba(0, 0, 0, 0.5);
+box-shadow: 0 4px 25px rgba(255, 255, 255, 0.1);
 }
 
 header nav {
@@ -48,7 +55,7 @@ display: flex;
 
 header ul a {
 text-decoration: none;
-color: #fff;
+color: #000;
 padding: 0 1.5rem;
 text-transform: uppercase;
 font-weight: 300;
@@ -110,7 +117,7 @@ header {
 }
 
 h1 {
-	color: white;
+	color: #fff;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');

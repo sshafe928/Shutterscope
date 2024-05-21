@@ -868,3 +868,78 @@ input[type="submit"]
         font-size: 28px;
     }
 }
+
+.sidebar:hover .logo h2 {
+    display: block;
+    z-index: 9999999999999999999999999;
+
+    }
+    
+    .sidebar .links {
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: calc(100% - 140px);
+    z-index: 9999999999999999999999999;
+    }
+    
+    .sidebar .links::-webkit-scrollbar {
+    display: none;
+    }
+    
+    .links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    }
+    
+    .links li:hover {
+    cursor: pointer;
+    background: #fff;
+    z-index: 9999999999999999999999999;
+
+    }
+    
+    .links h4 {
+    color: #222;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 10px;
+    z-index: 9999999999999999999999999;
+
+    }
+    
+    .sidebar:hover .links h4 {
+    display: block;
+    }
+    
+    .links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+    }
+    
+    .sidebar:hover .links hr {
+    border-color: transparent;
+    }
+    
+    .links li span {
+    padding: 12px 10px;
+    }
+    
+    .links li a {
+    padding: 10px;
+    color: #000;
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+    }
+    
+    .sidebar:hover .links li a {
+    display: block;
+    }
+    
+    .links .logout-link {
+    margin-top: 20px;
+    }
